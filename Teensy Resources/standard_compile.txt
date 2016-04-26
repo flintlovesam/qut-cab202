@@ -1,0 +1,3 @@
+avr-gcc -mmcu=atmega32u4 -Os -DF_CPU=8000000UL frowny.c -o frowny.o -L"../Teensy Resources\CAB202_Teensy" -I"../Teensy Resources\CAB202_Teensy" -lcab202_teensy -lm -std=gnu99
+
+avr-objcopy -O ihex frowny.o frowny.hex
